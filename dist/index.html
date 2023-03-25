@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/site-icon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TheBox</title>
+</head>
+
+<body>
+    <!-- 1. Встречающий экран -->
+    <div class="first-screen">
+        <!-- 1.1 Шапка -->
+        <header class="header">
+            <div class="container">
+                <!-- 1.1.1 Логотип и имя -->
+                <div class="header__logo-name">
+                    <img class="header__logo" src="images/icons/header/logo.svg" alt="Логотип TheBox">
+                    <h1 class="header__name"><i>The</i>Box</h1>
+                </div>
+
+                <!-- 1.1.2 Меню -->
+                <nav class="header__nav">
+                    <a href="#" class="header__nav-item">Home</a>
+                    <a href="#" class="header__nav-item">About Us</a>
+                    <a href="#" class="header__nav-item">Projects</a>
+                    <a href="#" class="header__nav-item">Services</a>
+                    <a href="#" class="header__nav-item">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 1.2 Презентующий слайдер -->
+        <div class="presentation">
+            <div class="container">
+                <h1 class="presentation__header">Building things is our mission.</h1>
+
+                <!-- 1.2.1 Блок "Будущие проекты" -->
+                <div class="feature-projects">
+                    <h1 class="feature-projects__header">Feature Projects</h1>
+
+                    <p class="feature-projects__desc">The National University of Architecture</p>
+
+                    <div class="feature-projects__btns">
+                        <button class="f-p-b-back grey-button-back grey-button">Back</button>
+                        <button class="f-p-b-next grey-button-next grey-button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Главная -->
+    <main class="main">
+        <!-- 2.1 Репутация -->
+        <article class="reputation">
+            <div class="container">
+                <h1 class="reputation__header header-block">Our Reputation</h1>
+
+                <section class="achievments">
+                    <div class="achievments-item">
+                        <img src="images/icons/reputation/achievment-1.svg" alt="Достижение №1" class="achievments-item__icon">
+                        <h2 class="achievments-item__header">Best Services</h2>
+                        <p class="achievments-item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+
+                    <div class="achievments-item">
+                        <img src="images/icons/reputation/achievment-2.svg" alt="Достижение №2" class="achievments-item__icon">
+                        <h2 class="achievments-item__header">Best Team</h2>
+                        <p class="achievments-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="achievments-item">
+                        <img src="images/icons/reputation/achievment-3.svg" alt="Достижение №3" class="achievments-item__icon">
+                        <h2 class="achievments-item__header">Best Design</h2>
+                        <p class="achievments-item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!-- 2.2 О нас -->
+        <article class="about-us">
+            <div class="container">
+                <section class="about-us-inner">
+                    <img src="images/icons/about-us/some-man.jpg" alt="О нас" class="about-us-inner__img">
+
+                    <div class="about-us-inner-block">
+                        <h1 class="about-us-inner-block__header">About us</h1>
+                        <p class="about-us-inner-block__desc">For more than 30 years we have been delivering world-class construction and we’ve built many lasting relationships along the way.<br><br>We’ve matured into an industry leader and trusted resource for those seeking quality, innovation and reliability when building in the U.S.</p>
+                        <a href="#" class="about-us-inner-block__button">More on Our History</a>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!-- 2.3 Сервисы --> 
+        <article class="services">
+            <div class="container">
+                <h1 class="services__header header-block">Services</h1>
+    
+                <section class="services-row">
+                    <div class="services-row-block services-white">
+                        <img src="images/icons/services/construction.svg" alt="Иконка" class="services-row-block__icon">
+                        <h2 class="services-row-block__header">Construction</h2>
+                    </div>
+
+                    <div class="services-row-block services-blue">
+                        <img src="images/icons/services/renovation.svg" alt="Иконка" class="services-row-block__icon">
+                        <h2 class="services-row-block__header">Renovation</h2>
+                    </div>
+                    
+                    <div class="services-row-block services-white">
+                        <img src="images/icons/services/consultation.svg" alt="Иконка" class="services-row-block__icon">
+                        <h2 class="services-row-block__header">Consultation</h2>
+                    </div>
+                </section>
+                
+                <section class="services-row">
+                    <div class="services-row-block services-blue">
+                        <img src="images/icons/services/repair.svg" alt="Иконка" class="services-row-block__icon">
+                        <h2 class="services-row-block__header">Repair Services</h2>
+                    </div>
+
+                    <div class="services-row-block services-white">
+                        <img src="images/icons/services/architecture.svg" alt="Иконка" class="services-row-block__icon">
+                        <h2 class="services-row-block__header">Architecture</h2>
+                    </div>
+
+                    <div class="services-row-block services-blue">
+                        <img src="images/icons/services/electric.svg" alt="Иконка" class="services-row-block__icon">
+                        <h2 class="services-row-block__header">Electric</h2>
+                    </div>
+                </section>
+            </div>
+        </article> 
+
+        <!-- 2.4 Опыт -->
+        <article class="exp">
+            <div class="container">
+                <!-- 2.4.1 Статистика -->
+                <section class="stats">
+                    <div class="stats-item exp-item-1">
+                        <div class="wrapper">
+                            <img src="images/icons/exps/clients.svg" alt="Клиенты" class="stats-item__icon exp-icon-1">
+                            <h2 class="stats-item__num">84</h2>
+                            <p class="stats-item__desc">Happy Clients</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-item exp-item-2">
+                        <div class="wrapper">
+                            <img src="images/icons/exps/projects.svg" alt="Проекты" class="stats-item__icon exp-icon-2">
+                            <h2 class="stats-item__num">123</h2>
+                            <p class="stats-item__desc">Projects Completed</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-item exp-item-3">
+                        <div class="wrapper">
+                            <img src="images/icons/exps/awards.svg" alt="Награды" class="stats-item__icon exp-icon-3">
+                            <h2 class="stats-item__num">37</h2>
+                            <p class="stats-item__desc">Awards Win</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-item exp-item-4">
+                        <div class="wrapper">
+                            <img src="images/icons/exps/years.svg" alt="Бизнес" class="stats-item__icon exp-icon-4">
+                            <h2 class="stats-item__num">30</h2>
+                            <p class="stats-item__desc">Years in Business</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2.4.2 Текст об опыте -->
+                <section class="exp-text">
+                    <h1 class="exp-text__header">30 Years Experience</h1>
+                    <p class="exp-text__desc">Our company has been the leading provided construction services to clients throughout the USA since 1988.</p>
+                    <button class="blue-button">Contact Us</button>
+                </section>
+            </div>
+        </article>
+
+        <!-- 2.5 Консультация -->
+        <article class="consult">
+            <div class="container">
+                <section class="consult-text">
+                    <h1 class="consult-text__header">Free consultation with exceptional quality</h1>
+                    <p class="consult-text__tel">Just one call away: <a href="#">+84 1102 2703</a></p>
+                </section>
+    
+                <button class="consult-button">Get your consultation</button>
+            </div>
+        </article>
+
+        <!-- 2.6 Проекты -->
+        <article class="projects">
+            <div class="container">
+                <!-- 2.6.1 Сайдбар проектов -->
+                <section class="p-sidebar">
+                    <h1 class="p-sidebar__header">Projects</h1>
+                    <ul class="p-sidebar__filter">
+                        <li class="p-sidebar__filter-item filter-active">All</li>
+                        <li class="p-sidebar__filter-item">Commercial</li>
+                        <li class="p-sidebar__filter-item">Residential</li>
+                        <li class="p-sidebar__filter-item">Other</li>
+                    </ul>
+                </section>
+    
+                <!-- 2.6.2 Слайдер проектов -->
+                <section class="p-slider">
+                    <div class="p-s-buildings">
+                        <div class="p-s-building">
+                            <img src="images/icons/projects/1.jpg" alt="Отель Инфра" class="p-s-building__img">
+                            <h2 class="p-s-building__header">Wildstone Infra Hotel</h2>
+                            <p class="p-s-building__address">2715 Ash Dr. San Jose, South Dakota</p>
+                        </div>
+
+                        <div class="p-s-building">
+                            <img src="images/icons/projects/2.jpg" alt="Виш Стоун" class="p-s-building__img">
+                            <h2 class="p-s-building__header">Wish Stone Building</h2>
+                            <p class="p-s-building__address">2972 Westheimer Rd. Santa Ana, Illinois</p>
+                        </div>
+
+                        <div class="p-s-building">
+                            <img src="images/icons/projects/3.jpg" alt="Дом Паркинстона" class="p-s-building__img">
+                            <h2 class="p-s-building__header">Mr. Parkinston's House</h2>
+                            <p class="p-s-building__address">3517 W. Gray St. Utica, Pennsylvania</p>
+                        </div>
+
+                        <div class="p-s-building">
+                            <img src="images/icons/projects/4.jpg" alt="Небоскрёб Орегано" class="p-s-building__img">
+                            <h2 class="p-s-building__header">Oregano Height</h2>
+                            <p class="p-s-building__address">2464 Royal Ln. Mesa, New Jersey</p>
+                        </div>
+                    </div>
+
+                    <div class="p-s-control">
+                        <button class="p-s-control-button grey-button grey-button-back">Back</button>
+
+                        <div class="p-s-control__pages">
+                            <div class="p-s-control__page active-page"></div>
+                            <div class="p-s-control__page"></div>
+                            <div class="p-s-control__page"></div>
+                            <div class="p-s-control__page"></div>
+                            <div class="p-s-control__page"></div>
+                        </div>
+
+                        <button class="p-s-control-button grey-button grey-button-next">Next</button>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <!-- 2.7 Форма -->
+        <article class="art-form">
+            <form class="form">
+                <h1 class="form__header header-block">What can us do for you?</h1>
+                <p class="form__desc">We are ready to work on a project of any complexity, whether it’s commercial or residential.</p>
+
+                <div class="form__inputs">
+                    <input class="form__text form__input" type="text" placeholder="Your Name *" required>
+                    <input class="form__email form__input" type="email" placeholder="Email *" required>
+
+                    <select class="form__select form__input">
+                        <option value="0" selected>- Укажите причину контакта -</option>
+                        <option value="1">Причина контакта 1</option>
+                        <option value="2">Причина контакта 2</option>
+                        <option value="3">Причина контакта 3</option>
+                    </select>
+                    <input class="form__tel form__input" type="tel" placeholder="Phone">
+
+                    <div class="form__label-textarea">
+                        <textarea class="form__textarea" cols="50" rows="4" placeholder="Message"></textarea>
+                        <p class="form__require"><span>*</span> indicates a required field</p>
+                    </div>
+
+                    <Button class="blue-button form__submit">Submit</Button>
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <!-- 3. Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <!-- 3.1 Инфо футера -->
+                <div class="f-info">
+                    <div class="f-info-item">
+                        <p class="f-info-item__header">Address:</p>
+                        <p class="f-info-item__desc">6391 Elgin St. Celina, Delaware 10299</p>
+                    </div>
+                    <div class="f-info-item">
+                        <p class="f-info-item__header">Phone:</p>
+                        <p class="f-info-item__desc">+84 1102 2703</p>
+                    </div>
+                    <div class="f-info-item">
+                        <p class="f-info-item__header">Email:</p>
+                        <p class="f-info-item__desc">hello@thebox.com</p>
+                    </div>
+
+                    <div class="header__logo-name">
+                        <img class="header__logo" src="images/icons/header/logo.svg" alt="Логотип TheBox">
+                        <h1 class="header__name"><i>The</i>Box</h1>
+                    </div>
+                </div>
+
+                <!-- 3.2 Ссылки футера -->
+                <div class="f-links">
+                    <form class="f-links-form">
+                        <h1 class="f-link-form__header">Newsletter:</h1>
+                        <input class="form__input" type="text" placeholder="Your email here">
+                        <button class="f-links-form__button">Subscribe</button>
+                    </form>
+
+                    <div class="f-links-social">
+                        <h1 class="f-link-social__header">Social:</h1>
+                        <div class="f-links-social__icons">
+                            <a href="#"><img src="images/icons/footer/fb.svg" alt="" class="f-link-social__icon"></a>
+                            <a href="#"><img src="images/icons/footer/in.svg" alt="" class="f-link-social__icon"></a>
+                            <a href="#"><img src="images/icons/footer/tw.svg" alt="" class="f-link-social__icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3.3 Второе дно футера -->
+        <div class="footer-second">
+            <div class="container">
+                <p class="footer-second__header">TheBox Company © 2022. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

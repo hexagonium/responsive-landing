@@ -1,0 +1,782 @@
+/* --- Начальные параметры --- */
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+
+/* --- Общие блоки --- */
+/* Серая кнопка слайдера */
+.grey-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #292E3D;
+    color: #fff;
+    width: 100%;
+    transition: .2s linear;
+    font-size: 16px;
+}
+
+.grey-button:hover {
+    background-color: #4e535f;
+}
+
+.grey-button-back {
+    padding-right: 20px;
+}
+
+.grey-button-next {
+    padding-left: 20px;
+}
+
+.grey-button-back::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/icons/presentation/back.svg) no-repeat 0 0 / 100% 100%;
+    width: 50px;
+    height: 16px;
+}
+
+.grey-button-next::after {
+    content: "";
+    display: inline-block;
+    background: url(../images/icons/presentation/next.svg) no-repeat 0 0 / 100% 100%;
+    width: 50px;
+    height: 15px;
+}
+
+
+.blue-button {
+    color: #fff;
+    background-color: #2947A9;
+    padding: 12px 34px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: .2s linear;
+    border: 2px solid #2947A9;
+}
+
+.blue-button:hover {
+    background-color: #fff;
+    color: #2947A9;
+}
+
+
+.header-block {
+    color: #292E3D;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+/* --- Модули --- */
+/* 1. Встречающий экран */
+.first-screen {
+    height: 100vh;
+}
+
+/* 1.1 Шапка */
+/* 1.1.1 Логотип и имя */
+.header {
+    height: 80px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.header__name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2947A9;
+    margin-left: 12px;
+}
+
+/* 1.1.2 Меню */
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item {
+    margin-left: 50px;
+    transition: .2s linear;
+    font-weight: 400;
+}
+
+.header__nav-item:hover {
+    color: #F9995D;
+}
+
+/* 1.2 Презентующий слайдер */
+.presentation {
+    position: relative;
+    height: calc(100% - 80px);
+    background-image: url(../images/bg/main.png);
+    background-position: 50% 85%;
+    background-repeat: no-repeat;
+}
+
+.presentation__header {
+    position: absolute;
+    color: #292E3D;
+    font-size: 60px;
+    font-weight: 600;
+    width: 500px;
+    top: calc(50% - 80px);
+}
+
+/* 1.2.1 Блок "Будущие проекты" */
+.feature-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: calc(100% - 400px);
+    top: calc(100% - 190px);
+    background-color: #3559C7;
+    width: 400px;
+    height: 190px;
+    color: #fff;
+}
+
+.feature-projects__header {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.feature-projects__desc {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.feature-projects__btns {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-p-b-back {
+    border-right: 1px #fff solid;
+}
+
+.f-p-b-next {
+    border-left: 1px #fff solid;
+}
+
+
+/* 2. Главная */
+/* 2.1 Репутация */
+.reputation .container {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reputation__header {
+    margin-bottom: 50px;
+}
+
+.achievments {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.achievments-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: #E0E3EB 2px solid;
+    border-radius: 4px;
+    width: 270px;
+}
+
+.achievments-item__icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+}
+
+.achievments-item__header {
+    color: #3D445C;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.achievments-item__desc {
+    color: #858EAD;
+    margin-bottom: 20px;
+}
+
+
+/* 2.2 О нас */
+.about-us .container {
+    padding: 60px 0;
+}
+
+.about-us-inner {
+    position: relative;
+    display: flex;
+}
+
+.about-us-inner-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    right: 0;
+    width: 440px;
+    background-color: #2947A9;
+    color: #fff;
+    padding: 50px 40px;
+    border-radius: 2px;
+}
+
+.about-us-inner-block__header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.about-us-inner-block__desc {
+    line-height: 1.1;
+    font-size: 18px;
+    margin-bottom: 75px;
+}
+
+.about-us-inner-block__button {
+    color: #2947A9;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: max-content;
+    border: 2px solid #fff;
+    transition: .2s linear;
+}
+
+.about-us-inner-block__button:hover {
+    background-color: #2947A9;
+    color: #fff;
+    border-color: #fff;
+}
+
+
+/* 2.3 Сервисы */
+.services {
+    background-color: #F6F8F7;
+}
+
+.services .container {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.services__header {
+    margin-bottom: -10px;
+}
+
+.services-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.services-row-block {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    padding: 38px 0;
+    border-radius: 4px;
+}
+
+.services-white {
+    background-color: #fff;
+    color: #2947A9;
+    box-shadow: 0 0 25px 0.5px #dbdbdb;
+}
+
+.services-blue {
+    background-color: #2947A9;
+    color: #fff;
+}
+
+.services-row-block__header {
+    font-size: 18px;
+    margin-top: 24px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-row-block__header::before {
+    content: "";
+    display: inline-block;
+    align-self: center;
+    width: 60px;
+    height: 2px;
+    background-color: #E0E3EB;
+    margin-bottom: 18px;
+}
+
+
+/* 2.4 Опыт */
+.exp .container {
+    display: flex;
+}
+
+.stats {
+    position: relative;
+    padding: 120px 0 0 0;
+    width: 55%;
+    height: 660px;
+}
+
+.stats-item {
+    box-shadow: 0 7px 15px 0 #d4d4d4;
+    border-radius: 6px;
+    width: max-content;
+    position: absolute;
+}
+
+.exp-item-1 {
+    right: 5%;
+    bottom: 65%;
+}
+
+.exp-item-2 {
+    left: 20%;
+    top: 28%;
+}
+
+.exp-item-3 {
+    left: 52%;
+    top: 46%;
+}
+
+.exp-item-4 {
+    left: 28%;
+    top: 60%;
+}
+
+.stats-item .wrapper {
+    padding: 28px;
+    padding-right: 56px;
+    position: relative;
+    width: max-content;
+}
+
+.stats-item__icon {
+    position: absolute;
+}
+
+.exp-icon-1 {
+    left: 70%;
+    bottom: 50%;
+}
+
+.exp-icon-2 {
+    right: 85%;
+    bottom: 80%;
+}
+
+.exp-icon-3 {
+    left: 70%;
+    bottom: 52%;
+}
+
+.exp-icon-4 {
+    left: 83%;
+    top: 67%;
+}
+
+.stats-item__num {
+    font-size: 56px;
+    font-weight: 600;
+    color: #292E3D;
+    margin-bottom: 7px;
+    margin-top: -12px;
+}
+
+.stats-item__desc {
+    font-size: 18px;
+    color: #667299;
+    display: flex;
+    align-items: center;
+}
+
+.stats-item__desc::before {
+    content: "";
+    background-color: #F9995D;
+    display: inline-block;
+    height: 24px;
+    width: 6px;
+    margin: 0 12px 0 12px;
+}
+
+.exp-text {
+    width: 45%;
+}
+
+/* 2.4.2 Текст об опыте */
+.exp-text {
+    align-self: center;
+    margin-left: 150px;
+}
+
+.exp-text__header {
+    font-size: 56px;
+    color: #2947A9;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.exp-text__desc {
+    color: #525B7A;
+    font-size: 15px;
+    margin-bottom: 40px;
+    padding-right: 52%;
+    line-height: 1.1;
+}
+
+
+/* 2.5 Консультация */
+.consult {
+    background: url(../images/bg/consult.jpg);
+    height: 300px;
+}
+
+.consult .container {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consult-text__header {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.consult-text__tel {
+    font-size: 18px;
+}
+.consult-text__tel a {
+    text-decoration: underline;
+}
+
+.consult-button {
+    margin-right: 50px;
+    height: max-content;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffffff00;
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: .2s linear;
+}
+
+.consult-button:hover {
+    box-shadow: 0 5px rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+.consult-button:active {
+    box-shadow: 0 0;
+    transform: translateY(0px);
+    transition: .025s linear;
+}
+
+
+/* 2.6 Проекты */
+.projects .container {
+    padding: 60px 0;
+    display: flex;
+}
+
+/* 2.6.1 Сайдбар проектов */
+.p-sidebar {
+    width: 30%;
+}
+
+.p-sidebar__header {
+    color: #292E3D;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.p-sidebar__filter-item {
+    color: #C2C7D6;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.filter-active {
+    font-weight: 700;
+    color: #2947A9;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.filter-active::before {
+    content: "";
+    background-color: #2947A9;
+    width: 3px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+/* 2.6.2 Слайдер проектов */
+.p-slider {
+    width: 70%;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-s-buildings {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+    margin-bottom: 37px;
+}
+
+.p-s-building {
+    background-color: #2947A9;
+    width: max-content;
+    color: #fff;
+}
+
+.p-s-building__header {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 12px;
+}
+
+.p-s-building__address {
+    font-weight: 400;
+    font-size: 13px;
+    margin: 0px 0px 16px 12px;
+}
+
+.p-s-control {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-s-control-button {
+    width: 290px;
+}
+
+.p-s-control__pages {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.p-s-control__page {
+    width: 16px;
+    height: 16px;
+    background-color: #F6F8F7;
+    border-radius: 50%;
+}
+
+.active-page {
+    background-color: #2947A9;
+}
+
+
+/* 2.7 Форма */
+.art-form {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #F6F8F7;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+    align-items: center;
+}
+
+.form__desc {
+    font-weight: 400;
+    color: #292E3D;
+    font-size: 15px;
+    width: 60%;
+    align-self: center;
+    margin: 20px 0 32px 0;
+}
+
+.form__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 28px;
+    width: 464px;
+    flex-wrap: wrap;
+    row-gap: 18px;
+}
+
+.form__input {
+    font-size: 14px;
+    padding: 8px 8px;
+    width: 218px;
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+}
+
+.form__textarea {
+    font-size: 14px;
+    padding: 8px 8px;
+    border: 1px solid #E0E3EB;
+    border-radius: 4px;
+}
+
+.form__label-textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__require {
+    font-size: 12px;
+    color: #667299;
+    margin-top: 8px;
+    align-self: flex-start;
+}
+
+.form__require span {
+    color: #C40303;
+}
+
+.form__submit {
+    width: 220px;
+    margin-top: 10px;
+}
+
+
+/* 3. Футер */
+.footer {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 3.1 Инфо футера */
+.f-info-item {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.f-info-item__header {
+    color: #2947A9;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 80px;
+}
+
+.f-info-item__desc {
+    color: #292E3D;
+}
+
+/* 3.2 Ссылки футера */
+.f-link-form__header {
+    color: #2947A9;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.f-links-form__button {
+    background-color: #F9995D;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: .2s linear;
+    border: 2px solid #F9995D;
+    margin-left: 3px;
+}
+
+.f-links-form__button:hover {
+    background-color: #fff;
+    color: #F9995D;
+}
+
+.f-link-social__header {
+    color: #2947A9;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.f-link-social__icon {
+    margin-right: 16px;
+}
+
+/* 3.3 Второе дно футера */
+.footer-second {
+    background-color: #2947A9;
+    height: 60px;
+}
+
+.footer-second .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-second__header {
+    color: #fff;
+}
